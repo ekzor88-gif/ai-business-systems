@@ -1,0 +1,103 @@
+---
+import Layout from '../../components/Layout.astro';
+import { siteConfig } from '../../config/site.js';
+
+const articles = [
+  {
+    title: 'Где бизнес теряет деньги на ручной работе',
+    excerpt: 'Кажется, что 15 минут в день — это нехорошо. Пока не посчитаете, что 5 человек × 365 дней = 456 часов в год. Это целый человек на полставки, который не работает в компании.',
+    date: '2025-01-15',
+    readTime: '5 min',
+    tag: 'Аналитика',
+  },
+  {
+    title: 'Когда CRM действительно нужна, а когда нет',
+    excerpt: 'CRM — не волшебная таблетка. Для компании из 3 продаж в день достаточно Excel и дисциплины. Но когда ваш отдел из 5 менеджеров теряет лиды — пора думать о системе.',
+    date: '2025-02-01',
+    readTime: '7 min',
+    tag: 'Консалтинг',
+  },
+  {
+    title: 'Почему Excel-хаос тормозит рост',
+    excerpt: 'Десятки файлов, разные форматы, ручные переносы. Это нормально на старте. Но когда компания растёт, Excel становится anchor, а не tool.',
+    date: '2025-02-20',
+    readTime: '6 min',
+    tag: 'Excel',
+  },
+  {
+    title: 'Какие задачи никогда не доходят до автоматизации',
+    excerpt: '«Надоело, напишем скрипт» — и ничего не происходит. Проблема не в мотивации, а в приоритетах. Разбираю, почему 80% идей по автоматизации умирают на этапе обсуждения.',
+    date: '2025-03-05',
+    readTime: '8 min',
+    tag: 'Менеджмент',
+  },
+  {
+    title: 'Как AI помогает убрать рутину без революции',
+    excerpt: 'Не нужно внедрять LLM во все процессы. Иногда достаточно одного чат-бота для ответа на repeat-вопросы. Разбираю реальные кейсы.',
+    date: '2025-03-20',
+    readTime: '6 min',
+    tag: 'AI',
+  },
+];
+---
+
+<Layout title="Статьи — AiOps & Automation" description="Практические статьи об автоматизации бизнеса, AI-интеграциях и устранении операционного хаоса">
+  <div class="py-20 lg:py-28">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Hero -->
+      <div class="max-w-3xl mb-16">
+        <p class="text-accent text-sm font-semibold uppercase tracking-wider mb-3">Статьи</p>
+        <h1 class="text-4xl sm:text-5xl font-bold text-white mb-6">
+          Мысли об автоматизации
+        </h1>
+        <p class="text-gray-400 text-lg leading-relaxed">
+          Практические наблюдения из реального опыта внедрений. Без воды и модных слов.
+        </p>
+      </div>
+
+      <!-- Articles grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {articles.map((article) => (
+          <article class="glass p-6 hover:bg-white/[0.07] transition-all duration-300 group">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="px-3 py-1 rounded-full bg-accent/10 text-accent text-xs font-medium">{article.tag}</span>
+              <span class="text-gray-500 text-xs">{article.readTime}</span>
+            </div>
+            <h2 class="text-xl font-semibold text-white mb-3 group-hover:text-accent transition-colors">
+              {article.title}
+            </h2>
+            <p class="text-gray-400 text-sm leading-relaxed mb-4">
+              {article.excerpt}
+            </p>
+            <div class="flex items-center justify-between">
+              <span class="text-gray-500 text-xs">{article.date}</span>
+              <span class="text-accent text-sm font-medium group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">
+                Читать
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </span>
+            </div>
+          </article>
+        ))}
+      </div>
+
+      <!-- Coming soon note -->
+      <div class="mt-12 text-center glass p-8">
+        <p class="text-gray-400 text-sm">
+          Новые статьи выходят регулярно. Подписывайтесь на Telegram, чтобы не пропустить.
+        </p>
+        <a
+          href={siteConfig.social.telegram.url}
+          target="_blank"
+          class="inline-flex items-center gap-2 mt-4 text-accent hover:text-accent-light transition-colors text-sm font-medium"
+        >
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18 1.897-.962 6.502-1.359 8.627-.168.9-.5 1.201-.82 1.23-.697.064-1.226-.461-1.901-.903-1.056-.693-1.653-1.123-2.678-1.799-1.185-.781-.417-1.21.258-1.911.177-.184 3.247-2.977 3.307-3.23.007-.032.02-.15-.057-.212s-.174-.041-.249-.024c-.106.024-1.793 1.139-5.062 3.345-.479.329-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.244-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.831-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635.099-.002.321.023.465.141.12.098.152.229.166.327.016.108.035.35.02.541z"/>
+          </svg>
+          Telegram
+        </a>
+      </div>
+    </div>
+  </div>
+</Layout>

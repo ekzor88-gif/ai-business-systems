@@ -1,0 +1,48 @@
+---
+import { approachSteps } from '../config/site.js';
+---
+
+<section class="py-20 lg:py-28 bg-dark-800/50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-2xl mb-16">
+      <p class="text-accent text-sm font-semibold uppercase tracking-wider mb-3">Подход</p>
+      <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">
+        Как я работаю
+      </h2>
+      <p class="text-gray-400 text-lg">
+        Внедряю только то, что даёт измеримый результат. Без модных слов и наворотов.
+      </p>
+    </div>
+
+    <!-- Steps -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+      {approachSteps.map((step) => (
+        <div class="relative glass p-6">
+          {/* Step number */}
+          <div class="text-accent text-3xl font-bold mb-4">{step.step}</div>
+          <h3 class="text-lg font-semibold text-white mb-2">{step.title}</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">{step.description}</p>
+        </div>
+      ))}
+    </div>
+
+    <!-- Key principle -->
+    <div class="mt-12 glass p-8 max-w-3xl">
+      <div class="flex items-start gap-4">
+        <div class="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0 mt-1">
+          <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-2">Главный принцип</h3>
+          <p class="text-gray-300 leading-relaxed">
+            Не внедряю технологии ради технологий. Сначала понимаю бизнес, нахожу узкие места,
+            и только потом подбираю инструмент. Иногда лучшим решением оказывается не CRM или AI,
+            а аккуратный Excel-дашборд или простая интеграция двух систем.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

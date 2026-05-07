@@ -1,0 +1,74 @@
+---
+// Pricing / Cooperation formats section
+const pricingItems = [
+  {
+    title: 'Базовая автоматизация',
+    description: 'Excel-отчёты, документооборот, автоматизация рутинных операций',
+    from: 'от 50 000 ₸',
+    examples: ['Сбор данных из нескольких источников', 'Автоматические отчёты', 'Шаблонизация документов'],
+  },
+  {
+    title: 'Telegram / WhatsApp боты',
+    description: 'Чат-боты для консультаций, уведомлений, заказов',
+    from: 'от 80 000 ₸',
+    examples: ['AI-консультанты', 'Интеграция с CRM/ERP', 'Автоматизация уведомлений'],
+  },
+  {
+    title: 'ERP / CRM / Data cleanup',
+    description: 'Очистка данных, интеграции, настройка систем',
+    from: 'от 120 000 ₸',
+    examples: ['Устранение дублей', 'Пробросы между системами', 'Настройка отчётности'],
+  },
+  {
+    title: 'Комплексные AI-системы',
+    description: 'После диагностики процессов',
+    from: 'по договорённости',
+    examples: ['AI-консультанты с базой знаний', 'Семантический поиск', 'Кастомные интеграции'],
+  },
+];
+---
+
+<section id="pricing" class="py-20 lg:py-28 bg-dark-800/50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-2xl mb-16">
+      <p class="text-accent text-sm font-semibold uppercase tracking-wider mb-3">Форматы</p>
+      <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">
+        Форматы сотрудничества
+      </h2>
+      <p class="text-gray-400 text-lg">
+        Типовые бюджеты. Конечная стоимость зависит от масштаба, сложности и текущего состояния процессов.
+      </p>
+    </div>
+
+    <!-- Pricing cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {pricingItems.map((item) => (
+        <div class="glass p-8 hover:bg-white/[0.07] transition-all duration-300">
+          <div class="flex items-start justify-between mb-4">
+            <h3 class="text-xl font-semibold text-white">{item.title}</h3>
+            <span class="text-accent font-bold whitespace-nowrap ml-4">{item.from}</span>
+          </div>
+          <p class="text-gray-400 text-sm mb-6">{item.description}</p>
+          <ul class="space-y-2">
+            {item.examples.map((example) => (
+              <li class="flex items-center gap-2 text-gray-300 text-sm">
+                <svg class="w-4 h-4 text-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                {example}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+
+    <!-- Disclaimer -->
+    <div class="mt-8 text-center">
+      <p class="text-gray-500 text-sm">
+        Обратите внимание: стоимость зависит от масштаба, сложности и текущего состояния процессов.
+        для точной оценки — обсудим вашу задачу.
+      </p>
+    </div>
+  </div>
+</section>

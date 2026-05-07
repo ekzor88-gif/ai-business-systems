@@ -1,0 +1,19 @@
+---
+import Layout from '../components/Layout.astro';
+import Hero from '../components/Hero.astro';
+import Problems from '../components/Problems.astro';
+import Approach from '../components/Approach.astro';
+import NotAutomation from '../components/NotAutomation.astro';
+import Pricing from '../components/Pricing.astro';
+import Contacts from '../components/Contacts.astro';
+import { siteConfig } from '../config/site.js';
+---
+
+<Layout title="AiOps & Automation — Автоматизация бизнес-процессов и AI-интеграции" description={siteConfig.description}>
+  <Hero />
+  <Problems />
+  <Approach />
+  <NotAutomation />
+  <Pricing />
+  <Contacts />
+</Layout>

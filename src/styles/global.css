@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-dark-900 text-gray-100 font-sans antialiased;
+  }
+
+  ::selection {
+    @apply bg-accent/30 text-white;
+  }
+
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-xl;
+  }
+
+  .glass-strong {
+    @apply bg-white/10 backdrop-blur-xl border border-white/20 rounded-xl;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-accent via-sky-300 to-accent-light bg-clip-text text-transparent;
+  }
+
+  .section-divider {
+    @apply border-t border-white/5;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html { color-scheme: dark; }
+}
