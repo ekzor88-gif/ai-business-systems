@@ -1,0 +1,118 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ResumeSchema",
+  "description": "Схема структурированного профессионального резюме разработчика с поддержкой графа знаний",
+  "type": "object",
+  "properties": {
+    "personal_info": {
+      "type": "object",
+      "properties": {
+        "full_name": {
+          "type": "string"
+        },
+        "target_title": {
+          "type": "string",
+          "description": "Желаемая должность"
+        },
+        "email": {
+          "type": "string",
+          "format": "email"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string",
+          "description": "Город, страна проживания"
+        },
+        "github_url": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "required": ["full_name", "target_title", "email"]
+    },
+    "summary": {
+      "type": "string",
+      "description": "Краткое профессиональное саммари инженера (About Me)"
+    },
+    "work_experience": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "company": {
+            "type": "string"
+          },
+          "position": {
+            "type": "string"
+          },
+          "start_date": {
+            "type": "string",
+            "description": "Дата начала в формате YYYY-MM"
+          },
+          "end_date": {
+            "type": "string",
+            "description": "Дата окончания в формате YYYY-MM или 'Present'"
+          },
+          "responsibilities": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Список обязанностей и достижений на месте работы"
+          },
+          "projects": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "ID проектов, выполненных на этом месте работы"
+          }
+        },
+        "required": ["company", "position", "start_date", "end_date", "responsibilities"]
+      }
+    },
+    "education": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "institution": {
+            "type": "string"
+          },
+          "degree": {
+            "type": "string"
+          },
+          "graduation_year": {
+            "type": "integer"
+          }
+        },
+        "required": ["institution", "degree", "graduation_year"]
+      }
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          { "type": "string" },
+          {
+            "type": "object",
+            "properties": {
+              "id": { "type": "string" },
+              "name": { "type": "string" },
+              "category": { "type": "string" },
+              "level": { "type": "string" },
+              "first_used": { "type": "string" },
+              "last_used": { "type": "string" },
+              "confidence": { "type": "number", "minimum": 0.0, "maximum": 1.0 }
+            },
+            "required": ["id", "name", "category"]
+          }
+        ]
+      },
+      "description": "Список ключевых навыков и технологий (поддерживает плоские строки и структурированные объекты)"
+    }
+  },
+  "required": ["personal_info", "summary", "work_experience", "education", "skills"]
+}

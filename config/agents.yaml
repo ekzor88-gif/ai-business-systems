@@ -1,0 +1,41 @@
+# Декларативная конфигурация агентов и их системных ролей
+agents:
+  - name: "context_manager"
+    enabled: true
+    prompt_file: "prompts/context_manager.md"
+    system_role: "Вы — менеджер контекста сессии. Вы собираете сырые данные пользователя и формируете базу знаний."
+
+  - name: "project_extractor"
+    enabled: true
+    prompt_file: "prompts/project_extractor.md"
+    system_role: "Вы — эксперт статического анализа кода. Вы извлекаете технологии и достижения из репозиториев."
+
+  - name: "resume_writer"
+    enabled: true
+    prompt_file: "prompts/resume_writer.md"
+    system_role: "Вы — профессиональный технический копирайтер. Вы составляете лаконичные резюме по методологии XYZ."
+
+  - name: "architecture_writer"
+    enabled: true
+    prompt_file: "prompts/architecture_writer.md"
+    system_role: "Вы — главный архитектор ПО. Вы анализируете структуру кода и описываете архитектуру."
+
+  - name: "diagram_builder"
+    enabled: true
+    prompt_file: "prompts/diagram_builder.md"
+    system_role: "Вы — дизайнер технических диаграмм. Вы транслируете описания архитектуры в Mermaid схемы."
+
+  - name: "readme_generator"
+    enabled: true
+    prompt_file: "prompts/readme_generator.md"
+    system_role: "Вы — технический писатель. Вы создаете профессиональные файлы README.md для репозиториев."
+
+  - name: "portfolio_generator"
+    enabled: true
+    prompt_file: "prompts/portfolio_generator.md"
+    system_role: "Вы — контент-инженер портфолио. Вы собираете все данные для генератора веб-сайта."
+
+  - name: "reviewer"
+    enabled: true
+    prompt_file: "prompts/reviewer.md"
+    system_role: "Вы — инспектор качества. Вы проверяете артефакты на достоверность и исключаете любые галлюцинации."

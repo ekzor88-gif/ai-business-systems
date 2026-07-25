@@ -1,0 +1,1210 @@
+{
+  "skills": [
+    {
+      "id": "skill_etl_pipelines",
+      "name": "ETL Pipelines Sync",
+      "category": "Data Engineering",
+      "level": "Advanced",
+      "confidence": 0.95,
+      "verification_status": "unverified"
+    },
+    {
+      "id": "skill_workflow_automation",
+      "name": "Workflow Automation",
+      "category": "Integration",
+      "level": "Expert",
+      "confidence": 0.95,
+      "verification_status": "unverified"
+    },
+    {
+      "id": "skill_rag_design",
+      "name": "RAG System Design",
+      "category": "AI Engineering",
+      "level": "Advanced",
+      "confidence": 0.9,
+      "verification_status": "unverified"
+    },
+    {
+      "id": "skill_enterprise_integration",
+      "name": "Enterprise Integration",
+      "category": "Integration",
+      "level": "Advanced",
+      "confidence": 0.9,
+      "verification_status": "unverified"
+    },
+    {
+      "id": "skill_idempotency",
+      "name": "Idempotent Process Design",
+      "category": "Architecture",
+      "level": "Advanced",
+      "confidence": 0.95,
+      "verification_status": "unverified"
+    },
+    {
+      "id": "skill_text_to_sql",
+      "name": "Text-to-SQL Implementation",
+      "category": "AI Engineering",
+      "level": "Intermediate",
+      "confidence": 0.85,
+      "verification_status": "unverified"
+    },
+    {
+      "id": "skill_zero_data_leak",
+      "name": "Zero Data Leak Architecture",
+      "category": "Security",
+      "level": "Advanced",
+      "confidence": 0.9,
+      "verification_status": "unverified"
+    },
+    {
+      "id": "skill_ci_cd",
+      "name": "CI/CD Pipeline Management",
+      "category": "DevOps",
+      "level": "Advanced",
+      "confidence": 0.85,
+      "verification_status": "unverified"
+    },
+    {
+      "id": "backend_development",
+      "name": "Backend Development",
+      "category": "Uncategorized",
+      "confidence": 0.5,
+      "verification_status": "unverified"
+    },
+    {
+      "id": "etl_pipelines_sync",
+      "name": "ETL Pipelines Sync",
+      "category": "Uncategorized",
+      "confidence": 0.5,
+      "verification_status": "unverified"
+    },
+    {
+      "id": "workflow_automation",
+      "name": "Workflow Automation",
+      "category": "Uncategorized",
+      "confidence": 0.5,
+      "verification_status": "unverified"
+    },
+    {
+      "id": "rag_system_design",
+      "name": "RAG System Design",
+      "category": "Uncategorized",
+      "confidence": 0.5,
+      "verification_status": "unverified"
+    },
+    {
+      "id": "vector_search",
+      "name": "Vector Search",
+      "category": "Uncategorized",
+      "confidence": 0.5,
+      "verification_status": "unverified"
+    },
+    {
+      "id": "enterprise_integration",
+      "name": "Enterprise Integration",
+      "category": "Uncategorized",
+      "confidence": 0.5,
+      "verification_status": "unverified"
+    },
+    {
+      "id": "idempotent_process_design",
+      "name": "Idempotent Process Design",
+      "category": "Uncategorized",
+      "confidence": 0.5,
+      "verification_status": "unverified"
+    },
+    {
+      "id": "data_normalization",
+      "name": "Data Normalization",
+      "category": "Uncategorized",
+      "confidence": 0.5,
+      "verification_status": "unverified"
+    },
+    {
+      "id": "text-to-sql_implementation",
+      "name": "Text-to-SQL Implementation",
+      "category": "Uncategorized",
+      "confidence": 0.5,
+      "verification_status": "unverified"
+    },
+    {
+      "id": "zero_data_leak_architecture",
+      "name": "Zero Data Leak Architecture",
+      "category": "Uncategorized",
+      "confidence": 0.5,
+      "verification_status": "unverified"
+    },
+    {
+      "id": "ci/cd_pipeline_management",
+      "name": "CI/CD Pipeline Management",
+      "category": "Uncategorized",
+      "confidence": 0.5,
+      "verification_status": "unverified"
+    },
+    {
+      "id": "business_process_automation",
+      "name": "Business Process Automation",
+      "category": "Uncategorized",
+      "confidence": 0.5,
+      "verification_status": "unverified"
+    },
+    {
+      "id": "kpi_calculation_&_reporting",
+      "name": "KPI Calculation & Reporting",
+      "category": "Uncategorized",
+      "confidence": 0.5,
+      "verification_status": "unverified"
+    },
+    {
+      "id": "system_administration",
+      "name": "System Administration",
+      "category": "Uncategorized",
+      "confidence": 0.5,
+      "verification_status": "unverified"
+    },
+    {
+      "id": "mvp_development",
+      "name": "MVP Development",
+      "category": "Uncategorized",
+      "confidence": 0.5,
+      "verification_status": "unverified"
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_greenleaf",
+      "name": "GreenLeaf AI Consultant",
+      "description": "SaaS AI-консультант для e-commerce каталога wellness-продукции. Telegram-бот с RAG-системой, гибридным поиском и реферальной системой для партнеров.",
+      "project_type": "commercial",
+      "status": "production",
+      "start_date": "CONFLICT: 2025-07 | 2025-08",
+      "end_date": "Present",
+      "technologies": [
+        "tech_python",
+        "tech_aiogram",
+        "tech_openai",
+        "tech_postgresql",
+        "tech_pgvector",
+        "tech_supabase",
+        "tech_docker",
+        "tech_github_actions",
+        "tech_hetzner"
+      ],
+      "architecture": {
+        "pattern": "RAG + Hybrid Search + Microservices (Bot)",
+        "diagram_mermaid": "graph TD\n    A[Telegram Users] -->|Bot API| B(Aiogram Bot)\n    B --> C{AccessMiddleware}\n    C -->|Valid| D[LLM Engine OpenAI]\n    C -->|Valid| E[DB Layer Supabase/PostgreSQL]\n    E --> F[pgvector Semantic Search]\n    E --> G[Keyword Search]\n    F & G --> H[Hybrid Results]\n    H --> D\n    D --> I[Personalized Response]\n    I --> A"
+      },
+      "lessons_learned": [
+        "lesson_rag_hybrid",
+        "lesson_cost_optimization"
+      ],
+      "repositories": [],
+      "facts": [
+        "fact_greenleaf_users",
+        "fact_greenleaf_retention"
+      ],
+      "metrics": [
+        "metric_greenleaf_time",
+        "metric_greenleaf_cost",
+        "metric_greenleaf_retention",
+        "metric_greenleaf_messages"
+      ],
+      "evidence": [
+        "ev_greenleaf_md",
+        "ev_cv_docx"
+      ]
+    },
+    {
+      "id": "proj_mediacube_sync",
+      "name": "MC PAY -> NAV Integration",
+      "description": "Автоматизация синхронизации биллинговой платформы MC PAY с ERP Microsoft Dynamics NAV через n8n. Идемпотентный ETL-пайплайн создания контрагентов.",
+      "project_type": "commercial",
+      "status": "production",
+      "start_date": "2026-02",
+      "end_date": "2026-04",
+      "technologies": [
+        "tech_n8n",
+        "tech_postgresql",
+        "tech_microsoft_dynamics_nav",
+        "tech_soap",
+        "tech_slack_api",
+        "tech_sql"
+      ],
+      "architecture": {
+        "pattern": "ETL + Scheduled Workflow + Idempotent Sync",
+        "diagram_mermaid": "graph TD\n    A[MC PAY PostgreSQL] -->|SQL SELECT| B(n8n Workflow)\n    B --> C{Check Vendor Exists?}\n    C -->|No| D[SOAP Create Vendor]\n    C -->|Yes| E[Skip]\n    D --> F[XML to JSON Mapping]\n    F --> G[Log & Slack Notify]\n    E --> G\n    G --> H[Microsoft Dynamics NAV]"
+      },
+      "lessons_learned": [
+        "lesson_idempotency",
+        "lesson_soap_erp",
+        "lesson_n8n_batch",
+        "lesson_sandbox_testing"
+      ],
+      "repositories": [],
+      "facts": [
+        "fact_vendor_sync",
+        "fact_mapping_36k"
+      ],
+      "metrics": [
+        "metric_mediacube_time",
+        "metric_mediacube_report"
+      ],
+      "evidence": [
+        "ev_mediacube_md",
+        "ev_cv_docx"
+      ]
+    },
+    {
+      "id": "proj_estimate_analyzer",
+      "name": "Estimate Analyzer",
+      "description": "On-Premise AI-платформа для анализа строительных смет формата SANA. Парсинг Excel, нормализация в реляционную модель, Text-to-SQL интерфейс с гарантией конфиденциальности.",
+      "project_type": "pet_project",
+      "status": "archived",
+      "start_date": "2026-01",
+      "end_date": "2026-01",
+      "technologies": [
+        "tech_python",
+        "tech_pandas",
+        "tech_sqlalchemy",
+        "tech_streamlit",
+        "tech_alem_llm",
+        "tech_sql",
+        "tech_excel"
+      ],
+      "architecture": {
+        "pattern": "Zero Data Leak + Text-to-SQL + Local Processing",
+        "diagram_mermaid": "graph TD\n    A[Excel SANA] --> B[Parser & Normalizer]\n    B --> C[PostgreSQL/SQLite]\n    C --> D[SQLAlchemy ORM]\n    D --> E{Text-to-SQL Engine}\n    E -->|Schema + Query| F[Alem LLM API]\n    F -->|Generated SQL| E\n    E -->|Execute Locally| C\n    C --> G[Streamlit UI]"
+      },
+      "lessons_learned": [
+        "lesson_data_norm_time",
+        "lesson_excel_parser",
+        "lesson_text_to_sql_barrier",
+        "lesson_streamlit_mvp"
+      ],
+      "repositories": [],
+      "facts": [
+        "fact_estimate_security"
+      ],
+      "metrics": [
+        "metric_estimate_time"
+      ],
+      "evidence": [
+        "ev_estimate_md"
+      ]
+    },
+    {
+      "id": "proj_globalwine_reporting",
+      "name": "Global Wine Reporting Pipeline",
+      "description": "Автоматизация аналитики продаж и расчета KPI торговой команды. ETL на базе OLAP-кубов и Excel, классификация ассортимента, план-факт анализ.",
+      "project_type": "commercial",
+      "status": "archived",
+      "start_date": "2019-11",
+      "end_date": "2025-05",
+      "technologies": [
+        "tech_excel",
+        "tech_olap",
+        "tech_sql"
+      ],
+      "architecture": {
+        "pattern": "Batch ETL + OLAP Aggregation",
+        "diagram_mermaid": "graph TD\n    A[Sales Data] --> B[ETL Process]\n    B --> C[OLAP Cubes]\n    C --> D[KPI Calculation Model]\n    D --> E[Automated Report Template]"
+      },
+      "lessons_learned": [
+        "lesson_business_automation"
+      ],
+      "repositories": [],
+      "facts": [
+        "fact_kpi_automation"
+      ],
+      "metrics": [
+        "metric_globalwine_time"
+      ],
+      "evidence": [
+        "ev_cv_docx"
+      ]
+    },
+    {
+      "id": "proj_smart_supplier",
+      "name": "Smart Supplier SaaS",
+      "description": "Дипломный проект: SaaS-платформа для управления складскими запасами. ИИ-агенты на n8n для анализа дефицита и автоматической отправки заявок поставщикам.",
+      "project_type": "pet_project",
+      "status": "archived",
+      "start_date": "2025-01",
+      "end_date": "2025-06",
+      "technologies": [
+        "tech_react",
+        "tech_vite",
+        "tech_n8n",
+        "tech_tailwind",
+        "tech_llm_api",
+        "tech_github_actions"
+      ],
+      "architecture": {
+        "pattern": "SPA + AI Orchestration Backend",
+        "diagram_mermaid": "graph TD\n    A[React SPA] -->|Webhooks| B[n8n Orchestration]\n    B --> C{Inventory Check}\n    C -->|Low Stock| D[LLM Analysis]\n    D --> E[Auto Email to Supplier]\n    E --> A"
+      },
+      "lessons_learned": [],
+      "repositories": [
+        "repo_myfreedom"
+      ],
+      "facts": [
+        "fact_supplier_auto"
+      ],
+      "metrics": [
+        "metric_supplier_time"
+      ],
+      "evidence": [
+        "ev_myfreedom_md"
+      ]
+    }
+  ],
+  "technologies": [
+    {
+      "id": "tech_python",
+      "name": "Python",
+      "category": "Language",
+      "vendor": "Python Software Foundation"
+    },
+    {
+      "id": "tech_aiogram",
+      "name": "Aiogram 3",
+      "category": "Framework",
+      "vendor": "Aiogram Community"
+    },
+    {
+      "id": "tech_openai",
+      "name": "OpenAI API",
+      "category": "API",
+      "vendor": "OpenAI"
+    },
+    {
+      "id": "tech_postgresql",
+      "name": "PostgreSQL",
+      "category": "Database",
+      "vendor": "PostgreSQL Global Development Group"
+    },
+    {
+      "id": "tech_pgvector",
+      "name": "pgvector",
+      "category": "Database Extension",
+      "vendor": "pgvector Community"
+    },
+    {
+      "id": "tech_supabase",
+      "name": "Supabase",
+      "category": "Platform",
+      "vendor": "Supabase Inc."
+    },
+    {
+      "id": "tech_docker",
+      "name": "Docker Compose",
+      "category": "Tool",
+      "vendor": "Docker Inc."
+    },
+    {
+      "id": "tech_github_actions",
+      "name": "GitHub Actions",
+      "category": "Tool",
+      "vendor": "GitHub"
+    },
+    {
+      "id": "tech_hetzner",
+      "name": "Hetzner Cloud",
+      "category": "Infrastructure",
+      "vendor": "Hetzner"
+    },
+    {
+      "id": "tech_n8n",
+      "name": "n8n",
+      "category": "Tool",
+      "vendor": "n8n GmbH"
+    },
+    {
+      "id": "tech_microsoft_dynamics_nav",
+      "name": "Microsoft Dynamics NAV",
+      "category": "Enterprise System",
+      "vendor": "Microsoft"
+    },
+    {
+      "id": "tech_soap",
+      "name": "SOAP Web Services",
+      "category": "API",
+      "vendor": "W3C"
+    },
+    {
+      "id": "tech_slack_api",
+      "name": "Slack API",
+      "category": "API",
+      "vendor": "Slack Technologies"
+    },
+    {
+      "id": "tech_sql",
+      "name": "SQL",
+      "category": "Language",
+      "vendor": "ANSI/ISO"
+    },
+    {
+      "id": "tech_pandas",
+      "name": "Pandas",
+      "category": "Library",
+      "vendor": "Pandas Development Team"
+    },
+    {
+      "id": "tech_sqlalchemy",
+      "name": "SQLAlchemy",
+      "category": "Framework",
+      "vendor": "SQLAlchemy Project"
+    },
+    {
+      "id": "tech_streamlit",
+      "name": "Streamlit",
+      "category": "Framework",
+      "vendor": "Streamlit Inc."
+    },
+    {
+      "id": "tech_alem_llm",
+      "name": "Alem LLM API",
+      "category": "API",
+      "vendor": "Alem"
+    },
+    {
+      "id": "tech_excel",
+      "name": "Excel",
+      "category": "Tool",
+      "vendor": "Microsoft"
+    },
+    {
+      "id": "tech_olap",
+      "name": "OLAP",
+      "category": "Technology",
+      "vendor": "Various"
+    },
+    {
+      "id": "tech_react",
+      "name": "React 18",
+      "category": "Framework",
+      "vendor": "Meta"
+    },
+    {
+      "id": "tech_vite",
+      "name": "Vite",
+      "category": "Tool",
+      "vendor": "Evan You"
+    },
+    {
+      "id": "tech_tailwind",
+      "name": "Tailwind CSS",
+      "category": "Framework",
+      "vendor": "Tailwind Labs"
+    },
+    {
+      "id": "tech_llm_api",
+      "name": "LLM API (OpenAI/OpenRouter)",
+      "category": "API",
+      "vendor": "OpenAI/OpenRouter"
+    }
+  ],
+  "repositories": [
+    {
+      "id": "repo_myfreedom",
+      "name": "My_Freedom_diplom_work",
+      "url": "https://github.com/ekzor88-gif/My_Freedom_diplom_work",
+      "description": "Дипломный проект Smart Supplier SaaS: ИИ-система управления складскими запасами с авто-закупкой"
+    }
+  ],
+  "extracted_facts": [
+    {
+      "id": "fact_greenleaf_users",
+      "title": "Масштабирование пользовательской базы GreenLeaf",
+      "summary": "Привлечение 287 пользователей и обработка 7000+ сообщений без платной рекламы через реферальную систему.",
+      "description": "Разработана реферальная система с deep-link авторизацией. Лидирующий партнер привлек 55% базы. Бот обрабатывает 7091 сообщение с коэффициентом ответа 97.6%.",
+      "source": "document",
+      "project_id": "proj_greenleaf",
+      "technologies": [
+        "tech_aiogram",
+        "tech_supabase"
+      ],
+      "metrics": [
+        "metric_greenleaf_messages"
+      ],
+      "evidence": [
+        "ev_greenleaf_md"
+      ],
+      "lessons": [],
+      "confidence": 0.95,
+      "tags": [
+        "growth",
+        "referral",
+        "ai-bot"
+      ]
+    },
+    {
+      "id": "fact_vendor_sync",
+      "title": "Идемпотентная синхронизация MC PAY и NAV",
+      "summary": "Полная автоматизация создания контрагентов в ERP с исключением ручного ввода и дубликатов.",
+      "description": "Реализован ETL-пайплайн с проверкой USER ID перед созданием Vendor. Обработано 36 000+ исторических записей. Внедрено пакетное выполнение по 1000 записей для обхода ограничений UI n8n.",
+      "source": "document",
+      "project_id": "proj_mediacube_sync",
+      "technologies": [
+        "tech_n8n",
+        "tech_soap",
+        "tech_postgresql"
+      ],
+      "metrics": [
+        "metric_mediacube_time"
+      ],
+      "evidence": [
+        "ev_mediacube_md"
+      ],
+      "lessons": [
+        "lesson_idempotency",
+        "lesson_n8n_batch"
+      ],
+      "confidence": 0.95,
+      "tags": [
+        "etl",
+        "erp",
+        "automation"
+      ]
+    },
+    {
+      "id": "fact_estimate_security",
+      "title": "Zero Data Leak архитектура для анализа смет",
+      "summary": "Локальная обработка конфиденциальных финансовых данных с использованием LLM только для генерации SQL.",
+      "description": "Спроектирована архитектура, при которой в облако передаются только схема таблиц и вопрос пользователя. SQL выполняется локально в PostgreSQL/SQLite. Исключен риск утечки коммерческой тайны.",
+      "source": "document",
+      "project_id": "proj_estimate_analyzer",
+      "technologies": [
+        "tech_sqlalchemy",
+        "tech_alem_llm",
+        "tech_postgresql"
+      ],
+      "metrics": [
+        "metric_estimate_time"
+      ],
+      "evidence": [
+        "ev_estimate_md"
+      ],
+      "lessons": [
+        "lesson_zero_leak"
+      ],
+      "confidence": 0.9,
+      "tags": [
+        "security",
+        "text-to-sql",
+        "on-premise"
+      ]
+    },
+    {
+      "id": "fact_kpi_automation",
+      "title": "Автоматизация управленческой отчетности Global Wine",
+      "summary": "Снижение времени подготовки ежемесячной отчетности с 30-40 минут до 5 минут.",
+      "description": "Спроектирован ETL-процесс на базе OLAP-кубов и Excel. Разработана модель классификации SKU для автоматического расчета KPI и мотивации торговой команды.",
+      "source": "resume",
+      "project_id": "proj_globalwine_reporting",
+      "technologies": [
+        "tech_excel",
+        "tech_olap"
+      ],
+      "metrics": [
+        "metric_globalwine_time"
+      ],
+      "evidence": [
+        "ev_cv_docx"
+      ],
+      "lessons": [
+        "lesson_business_automation"
+      ],
+      "confidence": 0.95,
+      "tags": [
+        "reporting",
+        "kpi",
+        "etl"
+      ]
+    },
+    {
+      "id": "fact_supplier_auto",
+      "title": "Автоматизация закупок Smart Supplier SaaS",
+      "summary": "Сокращение времени создания заявки поставщику с 15-20 минут до 5 секунд.",
+      "description": "Интеграция React-фронтенда с n8n-оркестратором. ИИ-агент анализирует остатки и автоматически формирует email-заявки при достижении критического порога.",
+      "source": "document",
+      "project_id": "proj_smart_supplier",
+      "technologies": [
+        "tech_n8n",
+        "tech_react",
+        "tech_llm_api"
+      ],
+      "metrics": [
+        "metric_supplier_time"
+      ],
+      "evidence": [
+        "ev_myfreedom_md"
+      ],
+      "lessons": [],
+      "confidence": 0.85,
+      "tags": [
+        "saas",
+        "inventory",
+        "ai-agent"
+      ]
+    }
+  ],
+  "metrics": [
+    {
+      "id": "metric_greenleaf_time",
+      "metric_type": "Time Reduction",
+      "before": "60",
+      "after": "0.5",
+      "unit": "minutes",
+      "improvement_percent": 99.2,
+      "confidence": 0.9,
+      "project_id": "proj_greenleaf",
+      "fact_id": "fact_greenleaf_users"
+    },
+    {
+      "id": "metric_greenleaf_cost",
+      "metric_type": "Cost Reduction",
+      "before": "500",
+      "after": "3",
+      "unit": "USD/month",
+      "improvement_percent": 99.4,
+      "confidence": 0.85,
+      "project_id": "proj_greenleaf",
+      "fact_id": "fact_greenleaf_users"
+    },
+    {
+      "id": "metric_greenleaf_retention",
+      "metric_type": "Performance Improvement",
+      "before": null,
+      "after": "78.8",
+      "unit": "percent",
+      "improvement_percent": null,
+      "confidence": 0.95,
+      "project_id": "proj_greenleaf",
+      "fact_id": "fact_greenleaf_users"
+    },
+    {
+      "id": "metric_greenleaf_messages",
+      "metric_type": "Performance Improvement",
+      "before": null,
+      "after": "7091",
+      "unit": "messages",
+      "improvement_percent": null,
+      "confidence": 0.95,
+      "project_id": "proj_greenleaf",
+      "fact_id": "fact_greenleaf_users"
+    },
+    {
+      "id": "metric_mediacube_time",
+      "metric_type": "Time Reduction",
+      "before": "90",
+      "after": "6",
+      "unit": "minutes",
+      "improvement_percent": 93.3,
+      "confidence": 0.95,
+      "project_id": "proj_mediacube_sync",
+      "fact_id": "fact_vendor_sync"
+    },
+    {
+      "id": "metric_mediacube_report",
+      "metric_type": "Time Reduction",
+      "before": "120",
+      "after": "0",
+      "unit": "minutes",
+      "improvement_percent": 100,
+      "confidence": 0.9,
+      "project_id": "proj_mediacube_sync",
+      "fact_id": "fact_vendor_sync"
+    },
+    {
+      "id": "metric_estimate_time",
+      "metric_type": "Time Reduction",
+      "before": "180",
+      "after": "0.33",
+      "unit": "minutes",
+      "improvement_percent": 99.8,
+      "confidence": 0.9,
+      "project_id": "proj_estimate_analyzer",
+      "fact_id": "fact_estimate_security"
+    },
+    {
+      "id": "metric_globalwine_time",
+      "metric_type": "Time Reduction",
+      "before": "40",
+      "after": "5",
+      "unit": "minutes",
+      "improvement_percent": 87.5,
+      "confidence": 0.9,
+      "project_id": "proj_globalwine_reporting",
+      "fact_id": "fact_kpi_automation"
+    },
+    {
+      "id": "metric_supplier_time",
+      "metric_type": "Time Reduction",
+      "before": "20",
+      "after": "0.08",
+      "unit": "minutes",
+      "improvement_percent": 99.6,
+      "confidence": 0.85,
+      "project_id": "proj_smart_supplier",
+      "fact_id": "fact_supplier_auto"
+    }
+  ],
+  "lessons_learned": [
+    {
+      "id": "lesson_idempotency",
+      "title": "Идемпотентность обязательна для ETL",
+      "description": "Повторный запуск процесса не должен создавать дубликаты. Проверка по бизнес-идентификатору перед созданием записи критична для надежности.",
+      "category": "Process",
+      "project": "proj_mediacube_sync",
+      "technologies": [
+        "tech_n8n",
+        "tech_soap"
+      ],
+      "tags": [
+        "idempotency",
+        "etl",
+        "reliability"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "id": "lesson_soap_erp",
+      "title": "SOAP эффективен для корпоративных ERP",
+      "description": "SOAP остается надежным инструментом для интеграции с унаследованными ERP-системами, обеспечивая строгую типизацию и высокую производительность.",
+      "category": "Architecture",
+      "project": "proj_mediacube_sync",
+      "technologies": [
+        "tech_soap",
+        "tech_microsoft_dynamics_nav"
+      ],
+      "tags": [
+        "soap",
+        "erp",
+        "integration"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "lesson_n8n_batch",
+      "title": "Пакетная обработка для обхода UI-ограничений",
+      "description": "При обработке выборок >30 000 записей интерфейс n8n становится узким местом. Разбиение на батчи по 1000 записей решает проблему перегрузки.",
+      "category": "Performance",
+      "project": "proj_mediacube_sync",
+      "technologies": [
+        "tech_n8n"
+      ],
+      "tags": [
+        "batch-processing",
+        "performance",
+        "n8n"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "lesson_sandbox_testing",
+      "title": "Тестирование в Sandbox снижает риски",
+      "description": "Полноценная тестовая копия ERP позволяет безопасно проверять создание, обновление и удаление записей перед публикацией в production.",
+      "category": "Process",
+      "project": "proj_mediacube_sync",
+      "technologies": [
+        "tech_microsoft_dynamics_nav"
+      ],
+      "tags": [
+        "testing",
+        "sandbox",
+        "deployment"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "id": "lesson_data_norm_time",
+      "title": "Нормализация данных занимает больше времени, чем LLM",
+      "description": "В AI-проектах основная сложность и время уходят на парсинг, очистку и приведение неструктурированных данных к реляционной модели.",
+      "category": "Process",
+      "project": "proj_estimate_analyzer",
+      "technologies": [
+        "tech_pandas",
+        "tech_sqlalchemy"
+      ],
+      "tags": [
+        "data-engineering",
+        "normalization",
+        "ai"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "lesson_excel_parser",
+      "title": "Инженерные Excel требуют специализированных парсеров",
+      "description": "Универсальные библиотеки часто не справляются со сложной структурой строительных смет. Необходима кастомная логика извлечения материалов и работ.",
+      "category": "Performance",
+      "project": "proj_estimate_analyzer",
+      "technologies": [
+        "tech_excel",
+        "tech_pandas"
+      ],
+      "tags": [
+        "parsing",
+        "excel",
+        "data-quality"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "id": "lesson_text_to_sql_barrier",
+      "title": "Text-to-SQL снижает порог входа для пользователей",
+      "description": "Позволяет специалистам без знаний SQL выполнять сложные аналитические запросы на естественном языке, ускоряя принятие решений.",
+      "category": "Architecture",
+      "project": "proj_estimate_analyzer",
+      "technologies": [
+        "tech_alem_llm",
+        "tech_sql"
+      ],
+      "tags": [
+        "text-to-sql",
+        "ux",
+        "analytics"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "lesson_streamlit_mvp",
+      "title": "Streamlit идеален для MVP, но не для production",
+      "description": "Отлично подходит для быстрой проверки инженерных гипотез и создания прототипов, но требует замены на масштабируемый фронтенд для промышленной эксплуатации.",
+      "category": "Process",
+      "project": "proj_estimate_analyzer",
+      "technologies": [
+        "tech_streamlit"
+      ],
+      "tags": [
+        "mvp",
+        "prototyping",
+        "frontend"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "lesson_zero_leak",
+      "title": "Разделение генерации и выполнения SQL защищает данные",
+      "description": "Передача только схемы и вопроса во внешнюю LLM, с локальным выполнением запроса, гарантирует конфиденциальность финансовых данных.",
+      "category": "Security",
+      "project": "proj_estimate_analyzer",
+      "technologies": [
+        "tech_alem_llm",
+        "tech_postgresql"
+      ],
+      "tags": [
+        "security",
+        "data-privacy",
+        "architecture"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "id": "lesson_business_automation",
+      "title": "Понимание бизнес-процессов критично для автоматизации",
+      "description": "Опыт работы в бизнесе позволяет выявлять реальные боли (KPI, отчетность) и строить решения, которые действительно экономят время и деньги.",
+      "category": "Process",
+      "project": "proj_globalwine_reporting",
+      "technologies": [
+        "tech_excel",
+        "tech_olap"
+      ],
+      "tags": [
+        "business-logic",
+        "automation",
+        "kpi"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "lesson_rag_hybrid",
+      "title": "Гибридный поиск повышает релевантность RAG",
+      "description": "Сочетание keyword search и semantic search (cosine similarity) позволяет точно находить товары по точным названиям и по смыслу запроса.",
+      "category": "Architecture",
+      "project": "proj_greenleaf",
+      "technologies": [
+        "tech_pgvector",
+        "tech_openai"
+      ],
+      "tags": [
+        "rag",
+        "search",
+        "ai"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "lesson_cost_optimization",
+      "title": "Оптимизация архитектуры снижает эксплуатационные расходы",
+      "description": "Правильный выбор хостинга, моделей LLM и оптимизация запросов позволяет удерживать стоимость production-сервиса на уровне ~3-15 USD/мес.",
+      "category": "Performance",
+      "project": "proj_greenleaf",
+      "technologies": [
+        "tech_hetzner",
+        "tech_openai"
+      ],
+      "tags": [
+        "cost-optimization",
+        "infrastructure",
+        "llm"
+      ],
+      "confidence": 0.85
+    }
+  ],
+  "decisions": [
+    {
+      "id": "dec_n8n_orchestration",
+      "problem": "Необходимость надежной оркестрации ETL-процесса между биллингом и ERP без написания кастомного бэкенда",
+      "options": [
+        {
+          "name": "Custom Python Script",
+          "description": "Написание скрипта с cron и ручным управлением ошибками"
+        },
+        {
+          "name": "n8n Workflow",
+          "description": "Использование визуального конструктора с встроенным версионированием и логированием"
+        }
+      ],
+      "selected_option": "n8n Workflow",
+      "reason": "Быстрое развертывание, встроенное версионирование, удобная отладка и интеграция со Slack/ERP из коробки",
+      "tradeoffs": "Ограничения UI при больших объемах данных (решено пакетной обработкой)",
+      "consequences": "Ускорение разработки интеграции, упрощение поддержки и отката изменений",
+      "project_id": "proj_mediacube_sync",
+      "technologies": [
+        "tech_n8n"
+      ]
+    },
+    {
+      "id": "dec_soap_nav",
+      "problem": "Выбор протокола взаимодействия с Microsoft Dynamics NAV",
+      "options": [
+        {
+          "name": "REST API",
+          "description": "Современный стандарт, но не всегда доступен в старых версиях NAV"
+        },
+        {
+          "name": "SOAP Web Services",
+          "description": "Нативная поддержка в NAV, строгая типизация, надежность"
+        }
+      ],
+      "selected_option": "SOAP Web Services",
+      "reason": "Полная поддержка в используемой версии ERP, стабильность, встроенная аутентификация",
+      "tradeoffs": "Громоздкость XML, необходимость парсинга ответов",
+      "consequences": "Высокая надежность интеграции, предсказуемое поведение при ошибках",
+      "project_id": "proj_mediacube_sync",
+      "technologies": [
+        "tech_soap",
+        "tech_microsoft_dynamics_nav"
+      ]
+    },
+    {
+      "id": "dec_zero_leak_arch",
+      "problem": "Необходимость использования LLM для анализа конфиденциальных строительных смет без утечки данных",
+      "options": [
+        {
+          "name": "Full Data Upload",
+          "description": "Отправка всего файла в облако для анализа"
+        },
+        {
+          "name": "Zero Data Leak",
+          "description": "Передача только схемы БД и вопроса, локальное выполнение SQL"
+        }
+      ],
+      "selected_option": "Zero Data Leak",
+      "reason": "Строгие требования к конфиденциальности финансовых данных заказчика",
+      "tradeoffs": "Сложность реализации Text-to-SQL, зависимость от качества генерации SQL",
+      "consequences": "Полная изоляция данных, соответствие требованиям безопасности, сохранение функциональности AI",
+      "project_id": "proj_estimate_analyzer",
+      "technologies": [
+        "tech_alem_llm",
+        "tech_postgresql"
+      ]
+    },
+    {
+      "id": "dec_hybrid_search",
+      "problem": "Поиск товаров в каталоге 380+ SKU по разнородным запросам (точные названия vs описания проблем)",
+      "options": [
+        {
+          "name": "Pure Semantic",
+          "description": "Только векторный поиск по эмбеддингам"
+        },
+        {
+          "name": "Hybrid Search",
+          "description": "Комбинация keyword match и cosine similarity"
+        }
+      ],
+      "selected_option": "Hybrid Search",
+      "reason": "Повышение точности: keyword находит точные совпадения, semantic понимает контекст и синонимы",
+      "tradeoffs": "Усложнение пайплайна поиска и дедупликации результатов",
+      "consequences": "Рост релевантности ответов бота, улучшение пользовательского опыта",
+      "project_id": "proj_greenleaf",
+      "technologies": [
+        "tech_pgvector",
+        "tech_openai"
+      ]
+    },
+    {
+      "id": "dec_supabase_db",
+      "problem": "Выбор базы данных для хранения товаров, пользователей и векторов в GreenLeaf",
+      "options": [
+        {
+          "name": "Self-hosted PostgreSQL",
+          "description": "Полный контроль, но требует администрирования"
+        },
+        {
+          "name": "Supabase",
+          "description": "Управляемый PostgreSQL + pgvector + Storage + Auth из коробки"
+        }
+      ],
+      "selected_option": "Supabase",
+      "reason": "Быстрый старт, встроенная поддержка векторов, готовый storage для фото, бесплатный тариф для MVP",
+      "tradeoffs": "Зависимость от вендора, возможные ограничения на бесплатном тарифе",
+      "consequences": "Сокращение времени на настройку инфраструктуры, фокус на бизнес-логике",
+      "project_id": "proj_greenleaf",
+      "technologies": [
+        "tech_supabase",
+        "tech_pgvector"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev_media_54578611",
+      "type": "screenshot",
+      "source": "manual_upload",
+      "location": "storage/raw/media/photo.png",
+      "description": "Медиа-файл: photo.png",
+      "confidence": 1.0
+    },
+    {
+      "id": "ev_media_420461c8",
+      "type": "screenshot",
+      "source": "manual_upload",
+      "location": "storage/raw/media/estimate analyzer-2.png",
+      "description": "Медиа-файл: estimate analyzer-2.png",
+      "confidence": 1.0
+    },
+    {
+      "id": "ev_media_07a61109",
+      "type": "screenshot",
+      "source": "manual_upload",
+      "location": "storage/raw/media/estimate analyzer-3.png",
+      "description": "Медиа-файл: estimate analyzer-3.png",
+      "confidence": 1.0
+    },
+    {
+      "id": "ev_media_fd633849",
+      "type": "screenshot",
+      "source": "manual_upload",
+      "location": "storage/raw/media/estimate analyzer.png",
+      "description": "Медиа-файл: estimate analyzer.png",
+      "confidence": 1.0
+    },
+    {
+      "id": "ev_media_61dc86e6",
+      "type": "screenshot",
+      "source": "manual_upload",
+      "location": "storage/raw/media/GreenLeaf_bot_responce.png",
+      "description": "Медиа-файл: GreenLeaf_bot_responce.png",
+      "confidence": 1.0
+    },
+    {
+      "id": "ev_media_4befc313",
+      "type": "screenshot",
+      "source": "manual_upload",
+      "location": "storage/raw/media/Mediacube_workflow_vendor_creating.png",
+      "description": "Медиа-файл: Mediacube_workflow_vendor_creating.png",
+      "confidence": 1.0
+    },
+    {
+      "id": "ev_media_f55e38dc",
+      "type": "screenshot",
+      "source": "manual_upload",
+      "location": "storage/raw/media/MyFreedom_diplom_work_1.png",
+      "description": "Медиа-файл: MyFreedom_diplom_work_1.png",
+      "confidence": 1.0
+    },
+    {
+      "id": "ev_media_ad9f80e4",
+      "type": "screenshot",
+      "source": "manual_upload",
+      "location": "storage/raw/media/MyFreedom_diplom_work_2.png",
+      "description": "Медиа-файл: MyFreedom_diplom_work_2.png",
+      "confidence": 1.0
+    },
+    {
+      "id": "ev_media_1403f8e7",
+      "type": "screenshot",
+      "source": "manual_upload",
+      "location": "storage/raw/media/MyFreedom_diplom_work_3.png",
+      "description": "Медиа-файл: MyFreedom_diplom_work_3.png",
+      "confidence": 1.0
+    },
+    {
+      "id": "ev_media_6b1d7a06",
+      "type": "screenshot",
+      "source": "manual_upload",
+      "location": "storage/raw/media/MyFreedom_diplom_work_4.png",
+      "description": "Медиа-файл: MyFreedom_diplom_work_4.png",
+      "confidence": 1.0
+    },
+    {
+      "id": "ev_media_6826a93a",
+      "type": "screenshot",
+      "source": "manual_upload",
+      "location": "storage/raw/media/yt_commet_analyzer.jpg",
+      "description": "Медиа-файл: yt_commet_analyzer.jpg",
+      "confidence": 1.0
+    },
+    {
+      "id": "ev_cv_docx",
+      "type": "docx_document",
+      "source": "CV.docx",
+      "location": "Full Document",
+      "description": "Основное резюме с контактами, опытом работы, стеком технологий и кратким описанием проектов",
+      "confidence": 0.95
+    },
+    {
+      "id": "ev_greenleaf_md",
+      "type": "docx_document",
+      "source": "greenleaf.md",
+      "location": "Full Document",
+      "description": "Детальное описание архитектуры, метрик, стека и бизнес-модели проекта GreenLeaf AI Bot",
+      "confidence": 0.95
+    },
+    {
+      "id": "ev_mediacube_md",
+      "type": "docx_document",
+      "source": "mediacube.md",
+      "location": "Full Document",
+      "description": "Техническое описание интеграции MC PAY и NAV, архитектура, lessons learned и метрики производительности",
+      "confidence": 0.95
+    },
+    {
+      "id": "ev_estimate_md",
+      "type": "docx_document",
+      "source": "estimate analyzer.md",
+      "location": "Full Document",
+      "description": "Описание pet-проекта Estimate Analyzer, архитектура Zero Data Leak, стек и ограничения",
+      "confidence": 0.9
+    },
+    {
+      "id": "ev_myfreedom_md",
+      "type": "docx_document",
+      "source": "myfreedom_diplom_work.md",
+      "location": "Full Document",
+      "description": "Описание дипломного проекта Smart Supplier SaaS, архитектура и репозиторий",
+      "confidence": 0.85
+    },
+    {
+      "id": "ev_about_md",
+      "type": "docx_document",
+      "source": "about.md",
+      "location": "Full Document",
+      "description": "Карьерный путь, философия разработки, переход от системного администрирования к AI Engineering",
+      "confidence": 0.9
+    }
+  ]
+}

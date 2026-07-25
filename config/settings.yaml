@@ -1,0 +1,18 @@
+# Общие настройки системы Portfolio Factory
+system:
+  debug: true
+  log_level: "DEBUG"
+  max_retries: 3
+  timeout_seconds: 60
+
+validation:
+  strict_mode: true
+  enforce_schemas: true
+
+cache:
+  enabled: true
+  dir: "context/.cache"
+
+telemetry:
+  enabled: true
+  track_tokens: true

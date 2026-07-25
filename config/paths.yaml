@@ -1,0 +1,28 @@
+# Конфигурация системных путей (абсолютных и относительных)
+paths:
+  # Корневые директории
+  workspace_root: "c:/projects/portfolio_factory"
+  input_dir: "input"
+  output_dir: "output"
+  cache_dir: "context/.cache"
+  logs_dir: "logs"
+
+  # Директории ресурсов
+  schemas_dir: "schemas"
+  prompts_dir: "prompts"
+  templates_dir: "templates"
+
+  # Слой хранения (Storage Layer)
+  storage_raw_dir: "storage/raw"
+  storage_normalized_dir: "storage/normalized"
+  storage_knowledge_dir: "storage/knowledge"
+
+  # Конкретные файлы данных
+  knowledge_file: "storage/knowledge/knowledge.json"
+  projects_file: "output/projects.json"
+  resume_file: "output/resume.json"
+  portfolio_file: "output/portfolio.json"
+
+  # Выходные веб-директории
+  website_output_dir: "output/website"
+  diagrams_output_dir: "output/website/assets/diagrams"

@@ -1,0 +1,53 @@
+# Настройки маршрутизации LLM моделей по задачам/агентам
+providers:
+  openai:
+    api_key_env: "QWEN_API_KEY"
+    base_url_env: "QWEN_BASE_URL"
+    default_model: "qwen3-6"
+  openrouter:
+    api_key_env: "OPENROUTER_API_KEY"
+    default_model: "openrouter/free"
+  gemini:
+    api_key_env: "GEMINI_API_KEY"
+    default_model: "gemini-2.5-flash"
+
+agent_routing:
+  context_manager:
+    provider: "openai"
+    model: "qwen3-6"
+    temperature: 0.1
+
+  project_extractor:
+    provider: "openai"
+    model: "qwen3-6"
+    temperature: 0.2
+
+  resume_writer:
+    provider: "openai"
+    model: "qwen3-6"
+    temperature: 0.3
+
+  architecture_writer:
+    provider: "openai"
+    model: "qwen3-6"
+    temperature: 0.2
+
+  diagram_builder:
+    provider: "openai"
+    model: "qwen3-6"
+    temperature: 0.1
+
+  readme_generator:
+    provider: "openai"
+    model: "qwen3-6"
+    temperature: 0.4
+
+  portfolio_generator:
+    provider: "openai"
+    model: "qwen3-6"
+    temperature: 0.3
+
+  reviewer:
+    provider: "openai"
+    model: "qwen3-6"
+    temperature: 0.0

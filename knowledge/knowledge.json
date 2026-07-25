@@ -1,0 +1,325 @@
+{
+  "raw_resume_data": {
+    "personal_info": {
+      "full_name": "Василий Артемьев",
+      "target_title": "Automation & Integration Engineer (Python | AI | Enterprise Systems)",
+      "email": "ekzor88@gmail.com",
+      "phone": "+7 702 955-42-06",
+      "location": "Казахстан, Акмолинская область, г. Щучинск"
+    },
+    "summary": "Automation & Integration Engineer с опытом проектирования AI-решений, интеграции корпоративных систем и автоматизации бизнес-процессов. Разрабатываю production-интеграции между ERP, биллинговыми платформами и AI-сервисами. Специализируюсь на построении надежных workflow, ETL-пайплайнов и AI-продуктов от MVP до эксплуатации.",
+    "skills": [
+      "Python",
+      "RAG",
+      "LLM Integration",
+      "Vector Search (pgvector)",
+      "n8n",
+      "ETL",
+      "Workflow Automation",
+      "REST API",
+      "SOAP API",
+      "FastAPI",
+      "PostgreSQL",
+      "Aiogram 3",
+      "Docker Compose",
+      "CI/CD",
+      "Google Cloud",
+      "Microsoft Dynamics NAV",
+      "Microsoft Dynamics Business Central",
+      "SQL",
+      "Data Extraction",
+      "Pandas",
+      "SQLAlchemy",
+      "Streamlit",
+      "OLAP",
+      "Excel",
+      "Windows Server",
+      "Slack API",
+      "XML",
+      "JSON"
+    ],
+    "education": [
+      {
+        "institution": "",
+        "degree": "Бакалавр информационных систем",
+        "graduation_year": null
+      }
+    ],
+    "work_experience": [
+      {
+        "company": "SaaS AI-консультант для e-commerce каталога",
+        "position": "Automation & Integration Engineer",
+        "start_date": "2025-07",
+        "end_date": "Present",
+        "responsibilities": [
+          "Спроектировал архитектуру AI-ассистента и реализовал RAG-систему на Python с pgvector и OpenAI API",
+          "Реализовал гибридный семантический поиск и Telegram-интерфейс для автоматизированной консультации",
+          "Оптимизировал архитектуру, снизив эксплуатационные расходы до ≈3 USD/месяц"
+        ]
+      },
+      {
+        "company": "Mediacube WorldWide LTD",
+        "position": "N8n automatisation specialist",
+        "start_date": "2026-02",
+        "end_date": "2026-04",
+        "responsibilities": [
+          "Спроектировал и внедрил ETL-пайплайн синхронизации PostgreSQL → n8n → Microsoft Dynamics NAV (SOAP API)",
+          "Автоматизировал создание финансовых контрагентов и реализовал идемпотентную синхронизацию",
+          "Сократил обработку новых контрагентов с 60–90 минут до 1–6 минут и полностью исключил ручной перенос данных"
+        ]
+      },
+      {
+        "company": "On-Premise AI-платформа для анализа строительных смет",
+        "position": "Разработчик",
+        "start_date": "2026-01",
+        "end_date": "2026-01",
+        "responsibilities": [
+          "Спроектировал локальную платформу на Python (Pandas, SQLAlchemy, Streamlit)",
+          "Реализовал механизм Text-to-SQL для выполнения аналитических запросов на естественном языке",
+          "Обеспечил локальную обработку конфиденциальных данных без передачи во внешние сервисы"
+        ]
+      },
+      {
+        "company": "ТОО Global Wine / FMCG-ритейл",
+        "position": "Супервайзер",
+        "start_date": "2019-11",
+        "end_date": "2025-05",
+        "responsibilities": [
+          "Спроектировал ETL-процесс подготовки управленческой отчетности на базе OLAP-кубов и Excel",
+          "Разработал модель классификации ассортимента для автоматического расчета KPI",
+          "Сократил время подготовки ежемесячной отчетности с 30–40 минут до 5 минут"
+        ]
+      },
+      {
+        "company": "ГКП на ПХВ \"Термо-Транзит\"",
+        "position": "Инженер-программист / Системный администратор",
+        "start_date": "2010-09",
+        "end_date": "2019-11",
+        "responsibilities": [
+          "Поддержка Windows Server и корпоративной сети предприятия",
+          "Администрирование баз данных и рабочих станций",
+          "Разработка внутренних утилит автоматизации инженерных расчетов и документооборота"
+        ]
+      }
+    ]
+  },
+  "skills": [
+    {
+      "id": "python",
+      "name": "Python",
+      "category": "Uncategorized",
+      "confidence": 0.5
+    },
+    {
+      "id": "rag",
+      "name": "RAG",
+      "category": "Uncategorized",
+      "confidence": 0.5
+    },
+    {
+      "id": "llm_integration",
+      "name": "LLM Integration",
+      "category": "Uncategorized",
+      "confidence": 0.5
+    },
+    {
+      "id": "vector_search_(pgvector)",
+      "name": "Vector Search (pgvector)",
+      "category": "Uncategorized",
+      "confidence": 0.5
+    },
+    {
+      "id": "n8n",
+      "name": "n8n",
+      "category": "Uncategorized",
+      "confidence": 0.5
+    },
+    {
+      "id": "etl",
+      "name": "ETL",
+      "category": "Uncategorized",
+      "confidence": 0.5
+    },
+    {
+      "id": "workflow_automation",
+      "name": "Workflow Automation",
+      "category": "Uncategorized",
+      "confidence": 0.5
+    },
+    {
+      "id": "rest_api",
+      "name": "REST API",
+      "category": "Uncategorized",
+      "confidence": 0.5
+    },
+    {
+      "id": "soap_api",
+      "name": "SOAP API",
+      "category": "Uncategorized",
+      "confidence": 0.5
+    },
+    {
+      "id": "fastapi",
+      "name": "FastAPI",
+      "category": "Uncategorized",
+      "confidence": 0.5
+    },
+    {
+      "id": "postgresql",
+      "name": "PostgreSQL",
+      "category": "Uncategorized",
+      "confidence": 0.5
+    },
+    {
+      "id": "aiogram_3",
+      "name": "Aiogram 3",
+      "category": "Uncategorized",
+      "confidence": 0.5
+    },
+    {
+      "id": "docker_compose",
+      "name": "Docker Compose",
+      "category": "Uncategorized",
+      "confidence": 0.5
+    },
+    {
+      "id": "ci/cd",
+      "name": "CI/CD",
+      "category": "Uncategorized",
+      "confidence": 0.5
+    },
+    {
+      "id": "google_cloud",
+      "name": "Google Cloud",
+      "category": "Uncategorized",
+      "confidence": 0.5
+    },
+    {
+      "id": "microsoft_dynamics_nav",
+      "name": "Microsoft Dynamics NAV",
+      "category": "Uncategorized",
+      "confidence": 0.5
+    },
+    {
+      "id": "microsoft_dynamics_business_central",
+      "name": "Microsoft Dynamics Business Central",
+      "category": "Uncategorized",
+      "confidence": 0.5
+    },
+    {
+      "id": "sql",
+      "name": "SQL",
+      "category": "Uncategorized",
+      "confidence": 0.5
+    },
+    {
+      "id": "data_extraction",
+      "name": "Data Extraction",
+      "category": "Uncategorized",
+      "confidence": 0.5
+    },
+    {
+      "id": "pandas",
+      "name": "Pandas",
+      "category": "Uncategorized",
+      "confidence": 0.5
+    },
+    {
+      "id": "sqlalchemy",
+      "name": "SQLAlchemy",
+      "category": "Uncategorized",
+      "confidence": 0.5
+    },
+    {
+      "id": "streamlit",
+      "name": "Streamlit",
+      "category": "Uncategorized",
+      "confidence": 0.5
+    },
+    {
+      "id": "olap",
+      "name": "OLAP",
+      "category": "Uncategorized",
+      "confidence": 0.5
+    },
+    {
+      "id": "excel",
+      "name": "Excel",
+      "category": "Uncategorized",
+      "confidence": 0.5
+    },
+    {
+      "id": "windows_server",
+      "name": "Windows Server",
+      "category": "Uncategorized",
+      "confidence": 0.5
+    },
+    {
+      "id": "slack_api",
+      "name": "Slack API",
+      "category": "Uncategorized",
+      "confidence": 0.5
+    },
+    {
+      "id": "xml",
+      "name": "XML",
+      "category": "Uncategorized",
+      "confidence": 0.5
+    },
+    {
+      "id": "json",
+      "name": "JSON",
+      "category": "Uncategorized",
+      "confidence": 0.5
+    }
+  ],
+  "repositories": [],
+  "extracted_facts": [
+    {
+      "id": "fact_1",
+      "source": "resume",
+      "technology": "Python, pgvector, OpenAI API",
+      "description": "Спроектировал RAG-систему для e-commerce каталога, сократив время подбора продукции с десятков минут до 20–30 секунд.",
+      "confidence": 0.5
+    },
+    {
+      "id": "fact_2",
+      "source": "mediacube",
+      "technology": "n8n, PostgreSQL, Microsoft Dynamics NAV",
+      "description": "Внедрил ETL-пайплайн синхронизации биллинга с ERP, сократив обработку новых контрагентов с 60–90 минут до 1–6 минут.",
+      "confidence": 0.5
+    },
+    {
+      "id": "fact_3",
+      "source": "resume",
+      "technology": "Python, Pandas, SQLAlchemy, Streamlit",
+      "description": "Разработал локальную AI-платформу для анализа строительных смет с Text-to-SQL, исключив передачу финансовых данных во внешние сервисы.",
+      "confidence": 0.5
+    },
+    {
+      "id": "fact_4",
+      "source": "resume",
+      "technology": "OLAP, Excel",
+      "description": "Автоматизировал расчет KPI и управленческую отчетность в FMCG-ритейле, сократив время подготовки с 30–40 минут до 5 минут.",
+      "confidence": 0.5
+    },
+    {
+      "id": "fact_5",
+      "source": "resume",
+      "technology": "Google Cloud",
+      "description": "Получил сертификацию Google Cloud Skill Badge (Deploying Applications on Cloud Run).",
+      "confidence": 0.5
+    },
+    {
+      "id": "fact_6",
+      "source": "resume",
+      "technology": "Windows Server",
+      "description": "Поддерживал корпоративную инфраструктуру и разрабатывал утилиты автоматизации в ГКП на ПХВ \"Термо-Транзит\" (2010–2019).",
+      "confidence": 0.5
+    }
+  ],
+  "lessons_learned": [],
+  "projects": [],
+  "technologies": [],
+  "evidence": []
+}
